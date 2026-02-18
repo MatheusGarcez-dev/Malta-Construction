@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.php": { "runtime": "vercel-php@0.7.1" },
+    "api/about.php": { "runtime": "vercel-php@0.7.1" },
+    "api/contact.php": { "runtime": "vercel-php@0.7.1" },
+    "api/residential.php": { "runtime": "vercel-php@0.7.1" },
+    "api/commercial.php": { "runtime": "vercel-php@0.7.1" },
+    "api/renovation.php": { "runtime": "vercel-php@0.7.1" }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/api/index.php" },
+    { "source": "/about", "destination": "/api/about.php" },
+    { "source": "/contact", "destination": "/api/contact.php" },
+    { "source": "/residential", "destination": "/api/residential.php" },
+    { "source": "/commercial", "destination": "/api/commercial.php" },
+    { "source": "/renovation", "destination": "/api/renovation.php" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+// ========================================
+// FAQ Section
+// ========================================
+.faq-section {
+    padding: 140px 0;
+    background: linear-gradient(180deg, $color-white 0%, $color-surface 100%);
+    
+    @media (max-width: 768px) {
+        padding: 100px 0;
+    }
+    
+    &__list {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    &__item {
+        background: $color-white;
+        border-radius: 20px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        &:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            border-color: rgba($color-primary, 0.2);
+        }
+        
+        &.active {
+            border-color: rgba($color-primary, 0.3);
+            box-shadow: 0 15px 50px rgba($color-primary, 0.15);
+            
+            .faq-section__answer {
+                max-height: 500px;
+                padding: 0 2rem 2rem;
+                opacity: 1;
+            }
+            
+            .faq-section__icon {
+                transform: rotate(45deg);
+                background: linear-gradient(135deg, $color-primary, lighten($color-primary, 10%));
+                color: $color-white;
+            }
+        }
+    }
+    
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            .faq-section__question-text {
+                color: $color-primary;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            padding: 2rem 1.5rem;
+        }
+    }
+    
+    &__question-text {
+        font-family: $font-heading;
+        font-size: 1.3rem;
+        color: $color-dark;
+        font-weight: 700;
+        margin: 0;
+        flex: 1;
+        padding-right: 2rem;
+        line-height: 1.5;
+        transition: color 0.3s ease;
+        letter-spacing: -0.3px;
+        
+        @media (max-width: 768px) {
+            font-size: 1.15rem;
+            padding-right: 1rem;
+        }
+    }
+    
+    &__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, rgba($color-primary, 0.12), rgba($color-primary, 0.08));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-primary;
+        font-size: 1.3rem;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+        box-shadow: 0 4px 15px rgba($color-primary, 0.15);
+        
+        i {
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    &__answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 2rem;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    
+    &__answer-text {
+        font-size: 1.1rem;
+        color: $color-text-light;
+        line-height: 1.85;
+        margin: 0;
+        
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+}
+

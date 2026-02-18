@@ -1,0 +1,101 @@
+// ========================================
+// Floating Buttons
+// ========================================
+.floating-whatsapp,
+.floating-scroll-top {
+    position: fixed;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 999;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    
+    @media (max-width: 768px) {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+        right: 20px;
+    }
+    
+    @media (max-width: 576px) {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 15px;
+    }
+}
+
+.floating-whatsapp {
+    background: linear-gradient(135deg, $color-primary, darken($color-primary, 8%));
+    color: $color-white;
+    bottom: 110px;
+    animation: pulsePhone 2s ease-in-out infinite;
+    
+    &:hover {
+        background: linear-gradient(135deg, darken($color-primary, 5%), darken($color-primary, 12%));
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 6px 20px rgba($color-primary, 0.5);
+    }
+    
+    i {
+        color: $color-white;
+    }
+    
+    @media (max-width: 768px) {
+        bottom: 100px;
+    }
+    
+    @media (max-width: 576px) {
+        bottom: 90px;
+    }
+}
+
+.floating-scroll-top {
+    background-color: $color-primary;
+    color: $color-dark;
+    bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+    
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    &:hover {
+        background-color: darken($color-primary, 10%);
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 6px 20px rgba($color-primary, 0.4);
+    }
+    
+    i {
+        color: $color-dark;
+    }
+    
+    @media (max-width: 768px) {
+        bottom: 20px;
+    }
+    
+    @media (max-width: 576px) {
+        bottom: 15px;
+    }
+}
+
+@keyframes pulsePhone {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba($color-primary, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba($color-primary, 0.6);
+    }
+}
+

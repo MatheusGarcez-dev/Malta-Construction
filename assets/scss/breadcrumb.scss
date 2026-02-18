@@ -1,0 +1,62 @@
+// ========================================
+// Breadcrumb
+// ========================================
+.breadcrumb {
+    padding: 1.5rem 0;
+    
+    @media (max-width: 768px) {
+        padding: 1rem 0;
+    }
+    
+    &__nav {
+        // Navigation wrapper
+    }
+    
+    &__nav {
+        // Navigation wrapper
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 0.95rem;
+        color: rgba($color-white, 0.9);
+        
+        &::after {
+            content: '/';
+            margin-left: 0.75rem;
+            color: rgba($color-white, 0.5);
+        }
+        
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        
+        &--active {
+            color: $color-primary;
+            font-weight: 600;
+        }
+    }
+    
+    
+    &__link {
+        color: rgba($color-white, 0.9);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
