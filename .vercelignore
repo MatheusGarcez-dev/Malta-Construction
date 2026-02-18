@@ -1,0 +1,7 @@
+# Ignorar TUDO na raiz e permitir só api, assets e config.
+# Assim nenhum .php da raiz entra no deploy (evita download).
+/*
+!api
+!assets
+!vercel.json
+!.vercelignore
