@@ -1,0 +1,212 @@
+// ========================================
+// Variables
+// ========================================
+$color-primary: #EE672F;
+$color-dark: #1a1a1a;
+$color-white: #ffffff;
+$color-text: #333333;
+$color-text-light: #666666;
+
+// Backgrounds (to avoid "white blocks")
+$color-surface: #fafafa; // light gray background
+$color-surface-2: #ffffff;
+$color-gray-light: #f5f5f5;
+$color-gray-medium: #e0e0e0;
+
+$font-primary: 'Montserrat', sans-serif;
+$font-heading: 'Montserrat', sans-serif;
+
+$container-max-width: 1200px;
+$container-padding: 20px;
+
+// ========================================
+// Reset & Base
+// ========================================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // scroll-behavior: smooth removido — causa lag/círculo no scroll (deixar nativo = fluido)
+    scroll-behavior: auto;
+    
+    // Custom Scrollbar - Webkit browsers (Chrome, Safari, Edge)
+    &::-webkit-scrollbar {
+        width: 8px;
+        
+        @media (max-width: 968px) {
+            width: 6px;
+        }
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: rgba($color-dark, 0.1);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, $color-primary 0%, darken($color-primary, 10%) 100%);
+        border-radius: 4px;
+        border: 1px solid rgba($color-dark, 0.1);
+        
+        &:hover {
+            background: linear-gradient(180deg, darken($color-primary, 5%) 0%, darken($color-primary, 15%) 100%);
+        }
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-text;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    // Custom Scrollbar - Firefox
+    scrollbar-width: thin;
+    scrollbar-color: $color-primary rgba($color-dark, 0.1);
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+    
+    @media (max-width: 576px) {
+        padding: 0 15px;
+    }
+}
+
+// ========================================
+// Buttons
+// ========================================
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    
+    &--primary {
+        background: linear-gradient(135deg, $color-primary 0%, darken($color-primary, 8%) 100%);
+        color: $color-white;
+        box-shadow: 0 4px 15px rgba($color-primary, 0.3);
+        
+        &:hover {
+            background: linear-gradient(135deg, darken($color-primary, 5%) 0%, darken($color-primary, 12%) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba($color-primary, 0.4);
+        }
+    }
+    
+    &--secondary {
+        background-color: transparent;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+// ========================================
+// Section Title
+// ========================================
+.section__header {
+    text-align: center;
+    margin-bottom: 4rem;
+    /* animação removida para evitar lag no scroll desta seção */
+    
+    @media (max-width: 768px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.section__title {
+    font-family: $font-heading;
+    font-size: 3rem;
+    color: $color-dark;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    
+    &--golden {
+        color: $color-primary;
+        position: relative;
+        background: linear-gradient(135deg, $color-primary 0%, lighten($color-primary, 10%) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.section__divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, $color-primary, transparent);
+    margin: 0 auto 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba($color-primary, 0.3);
+    
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 2px;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.section__subtitle {
+    font-size: 1.2rem;
+    color: $color-text-light;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: 1.7;
+    
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+
+// Seções abaixo da dobra: browser pode pular pintura até perto do viewport (scroll mais fluido)
+// .solucoes removido — cards com imagens ficavam com sensação de reload ao entrar na tela
+.socios,
+.cta-section,
+.beneficios,
+.faq-section {
+    content-visibility: auto;
+}
+
+// ========================================
+// Import Sections
+// ========================================
+@import 'header';
+@import 'hero';
+@import 'footer';
+@import 'floating-buttons';
+@import 'nova-section';
+@import 'breadcrumb';
+@import 'sobre';
+@import 'holding-familiar';
+@import 'sessao-viabilidade';
+@import 'seminario';
+@import 'contato';
+@import 'faq';
