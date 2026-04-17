@@ -20,9 +20,12 @@
                     <li class="header__dropdown">
                         <a href="/#services" class="header__link">Services <span class="header__arrow">▼</span></a>
                         <ul class="header__submenu">
-                            <li><a href="/residential" class="header__sublink">Residential Construction</a></li>
-                            <li><a href="/commercial" class="header__sublink">Commercial Construction</a></li>
-                            <li><a href="/renovation" class="header__sublink">Renovation & Remodeling</a></li>
+                            <li><a href="/finish-carpentry" class="header__sublink">Finish Carpentry</a></li>
+                            <li><a href="/custom-closets" class="header__sublink">Custom Closets</a></li>
+                            <li><a href="/stair-renovation" class="header__sublink">Stair Renovation</a></li>
+                            <li><a href="/trim-work" class="header__sublink">Trim Work</a></li>
+                            <li><a href="/cabinet-installation" class="header__sublink">Cabinet Installation</a></li>
+                            <li><a href="/flooring" class="header__sublink">Flooring</a></li>
                         </ul>
                     </li>
                     <li><a href="/contact" class="header__link header__link--cta">Contact</a></li>

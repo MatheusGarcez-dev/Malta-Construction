@@ -18,9 +18,12 @@
             <div class="footer__section">
                 <h4 class="footer__subtitle">Services</h4>
                 <ul class="footer__links">
-                    <li><a href="residential" class="footer__link">Residential Construction</a></li>
-                    <li><a href="commercial" class="footer__link">Commercial Construction</a></li>
-                    <li><a href="renovation" class="footer__link">Renovation & Remodeling</a></li>
+                    <li><a href="finish-carpentry" class="footer__link">Finish Carpentry</a></li>
+                    <li><a href="custom-closets" class="footer__link">Custom Closets</a></li>
+                    <li><a href="stair-renovation" class="footer__link">Stair Renovation</a></li>
+                    <li><a href="trim-work" class="footer__link">Trim Work</a></li>
+                    <li><a href="cabinet-installation" class="footer__link">Cabinet Installation</a></li>
+                    <li><a href="flooring" class="footer__link">Flooring</a></li>
                 </ul>
             </div>
             
@@ -29,7 +32,7 @@
                 <ul class="footer__links">
                     <li><a href="./" class="footer__link">Home</a></li>
                     <li><a href="about" class="footer__link">About Us</a></li>
-                    <li><a href="#services" class="footer__link">Services</a></li>
+                    <li><a href="./#services" class="footer__link">Services</a></li>
                     <li><a href="contact" class="footer__link">Contact</a></li>
                 </ul>
             </div>

@@ -31,62 +31,116 @@
             <div class="section__header">
                 <h2 class="section__title">Our <span class="section__title--golden">Services</span></h2>
                 <div class="section__divider"></div>
-                <p class="section__subtitle">Comprehensive construction solutions for residential and commercial projects</p>
+                <p class="section__subtitle">Finish carpentry, custom storage, stairs, trim, cabinets, and flooring—done with precision</p>
             </div>
             <div class="solucoes__grid">
-                <div class="solucoes__card">
+                <article class="solucoes__card" id="service-finish-carpentry">
                     <div class="solucoes__image">
-                        <img src="/assets/img/3.webp" alt="Residential Construction" width="400" height="280" loading="eager" decoding="async">
+                        <img src="/assets/img/service-finish-carpentry.jpeg" alt="Finish carpentry project" width="400" height="280" loading="eager" decoding="async">
                     </div>
                     <div class="solucoes__icon">
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-hammer"></i>
                     </div>
                     <div class="solucoes__card-content">
-                        <h3 class="solucoes__card-title">Residential Construction</h3>
+                        <h3 class="solucoes__card-title">Finish Carpentry</h3>
                         <p class="solucoes__card-text">
-                            From custom homes to renovations, we bring your residential vision to life with quality craftsmanship and attention to detail.
+                            Crown molding, built-ins, and final wood details that give your home a polished, professional look.
                         </p>
-                        <a href="/residential" class="solucoes__card-link">
+                        <a href="/finish-carpentry" class="solucoes__card-link">
                             Learn more <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="solucoes__card">
+                <article class="solucoes__card" id="service-custom-closets">
                     <div class="solucoes__image">
-                        <img src="/assets/img/4.webp" alt="Commercial Construction" width="400" height="280" loading="eager" decoding="async">
+                        <img src="/assets/img/service-custom-closets.jpeg" alt="Custom closet installation" width="400" height="280" loading="eager" decoding="async">
                     </div>
                     <div class="solucoes__icon">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-door-open"></i>
                     </div>
                     <div class="solucoes__card-content">
-                        <h3 class="solucoes__card-title">Commercial Construction</h3>
+                        <h3 class="solucoes__card-title">Custom Closets</h3>
                         <p class="solucoes__card-text">
-                            Professional commercial construction services for offices, retail spaces, and industrial facilities. Delivered on time and on budget.
+                            Walk-in and reach-in closet systems designed around your storage needs and daily routine.
                         </p>
-                        <a href="/commercial" class="solucoes__card-link">
+                        <a href="/custom-closets" class="solucoes__card-link">
                             Learn more <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="solucoes__card">
+                <article class="solucoes__card" id="service-stair-renovation">
                     <div class="solucoes__image">
-                        <img src="/assets/img/5.webp" alt="Renovation & Remodeling" width="400" height="280" loading="eager" decoding="async">
+                        <img src="/assets/img/service-stair-renovation.jpeg" alt="Stair renovation" width="400" height="280" loading="eager" decoding="async">
                     </div>
                     <div class="solucoes__icon">
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-stairs"></i>
                     </div>
                     <div class="solucoes__card-content">
-                        <h3 class="solucoes__card-title">Renovation & Remodeling</h3>
+                        <h3 class="solucoes__card-title">Stair Renovation</h3>
                         <p class="solucoes__card-text">
-                            Transform your existing space with our expert renovation and remodeling services. Quality workmanship that enhances value and functionality.
+                            New treads, risers, railings, and refinishing to refresh your staircase safely and beautifully.
                         </p>
-                        <a href="/renovation" class="solucoes__card-link">
+                        <a href="/stair-renovation" class="solucoes__card-link">
                             Learn more <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-trim-work">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-trim-work.jpeg" alt="Trim and molding work" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Trim Work</h3>
+                        <p class="solucoes__card-text">
+                            Baseboards, casings, wainscoting, and decorative millwork installed with clean lines and tight joints.
+                        </p>
+                        <a href="/trim-work" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-cabinet-installation">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-cabinet-installation.jpeg" alt="Cabinet installation" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-boxes-stacked"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Cabinet Installation</h3>
+                        <p class="solucoes__card-text">
+                            Kitchen and bath cabinets leveled, secured, and aligned for a factory-quality fit and finish.
+                        </p>
+                        <a href="/cabinet-installation" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-flooring">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-flooring.jpeg" alt="Flooring installation" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Flooring</h3>
+                        <p class="solucoes__card-text">
+                            Hardwood, laminate, luxury vinyl, and tile installed with attention to transitions and subfloor prep.
+                        </p>
+                        <a href="/flooring" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>

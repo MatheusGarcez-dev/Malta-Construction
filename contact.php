@@ -1,11 +1,5 @@
 <?php include 'includes/head.php'; ?>
 
-<?php
-// Formspree: substitua SEU_FORM_ID pelo ID do formulário que você cria em formspree.io
-$formspreeId = 'mwvnwwbn';
-$redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) . '?success=1';
-?>
-
 <main>
     <!-- Contato Hero -->
     <section class="sobre-hero">
@@ -44,9 +38,9 @@ $redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
                     
                     <div class="contato-form__contacts">
                         <div class="contato-form__contact-item">
-                            <a href="tel:+18436021986" class="contato-form__contact-icon contato-form__contact-icon--link" aria-label="Call us">
+                            <div class="contato-form__contact-icon">
                                 <i class="fas fa-phone"></i>
-                            </a>
+                            </div>
                             <div class="contato-form__contact-info">
                                 <h3 class="contato-form__contact-title">Phone</h3>
                                 <a href="tel:+18436021986" class="contato-form__contact-link">+1 (843) 602-1986</a>
@@ -54,9 +48,9 @@ $redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
                         </div>
                         
                         <div class="contato-form__contact-item">
-                            <a href="#contactForm" class="contato-form__contact-icon contato-form__contact-icon--link" aria-label="Go to contact form">
+                            <div class="contato-form__contact-icon">
                                 <i class="fas fa-envelope"></i>
-                            </a>
+                            </div>
                             <div class="contato-form__contact-info">
                                 <h3 class="contato-form__contact-title">Email</h3>
                                 <a href="mailto:maltaconstruction9@gmail.com" class="contato-form__contact-link">maltaconstruction9@gmail.com</a>
@@ -64,9 +58,9 @@ $redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
                         </div>
                         
                         <div class="contato-form__contact-item">
-                            <a href="https://www.facebook.com/share/1BitXzcxXe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="contato-form__contact-icon contato-form__contact-icon--link" aria-label="Visit our Facebook page">
+                            <div class="contato-form__contact-icon">
                                 <i class="fab fa-facebook"></i>
-                            </a>
+                            </div>
                             <div class="contato-form__contact-info">
                                 <h3 class="contato-form__contact-title">Facebook</h3>
                                 <a href="https://www.facebook.com/share/1BitXzcxXe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="contato-form__contact-link">Visit Our Page</a>
@@ -86,15 +80,7 @@ $redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
                 </div>
                 
                 <div class="contato-form__form-wrapper">
-                    <?php if (isset($_GET['success']) && $_GET['success'] == '1'): ?>
-                    <div class="contato-form__success" role="alert">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Thank you for your inquiry! We will contact you soon.</p>
-                    </div>
-                    <?php endif; ?>
-                    <form class="contato-form__form" id="contactForm" action="https://formspree.io/f/<?php echo htmlspecialchars($formspreeId); ?>" method="POST">
-                        <input type="hidden" name="_next" value="<?php echo htmlspecialchars($redirectUrl); ?>">
-                        <input type="hidden" name="_subject" value="Malta Construction - New Contact Form Submission">
+                    <form class="contato-form__form" id="contactForm">
                         <div class="contato-form__field">
                             <label for="nome" class="contato-form__label">Full Name *</label>
                             <input type="text" id="nome" name="nome" class="contato-form__input" required>
@@ -114,9 +100,12 @@ $redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
                             <label for="assunto" class="contato-form__label">Service Type *</label>
                             <select id="assunto" name="assunto" class="contato-form__select" required>
                                 <option value="">Select a service</option>
-                                <option value="residential">Residential Construction</option>
-                                <option value="commercial">Commercial Construction</option>
-                                <option value="renovation">Renovation & Remodeling</option>
+                                <option value="finish-carpentry">Finish Carpentry</option>
+                                <option value="custom-closets">Custom Closets</option>
+                                <option value="stair-renovation">Stair Renovation</option>
+                                <option value="trim-work">Trim Work</option>
+                                <option value="cabinet-installation">Cabinet Installation</option>
+                                <option value="flooring">Flooring</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -234,6 +223,28 @@ $redirectUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
 </main>
 
 <?php include 'includes/footer.php'; ?>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value;
+    
+    // Create email message
+    const subject = encodeURIComponent(`Construction Inquiry: ${assunto}`);
+    const body = encodeURIComponent(`Name: ${nome}\nEmail: ${email}\nPhone: ${telefone}\nService Type: ${assunto}\n\nMessage:\n${mensagem}`);
+    
+    // Open email client
+    window.location.href = `mailto:maltaconstruction9@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Also show success message
+    alert('Thank you for your inquiry! We will contact you soon.');
+});
+</script>
 
 </body>
 </html>

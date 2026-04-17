@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional construction company providing quality building services. Residential and commercial construction experts.">
-    <meta name="keywords" content="construction, building, construction company, residential construction, commercial construction">
-    <title>Construction Company - Quality Building Services</title>
+    <meta name="description" content="<?php echo isset($page_description) ? htmlspecialchars($page_description, ENT_QUOTES, 'UTF-8') : 'Professional construction company providing quality building services. Residential and commercial construction experts.'; ?>">
+    <meta name="keywords" content="<?php echo isset($page_keywords) ? htmlspecialchars($page_keywords, ENT_QUOTES, 'UTF-8') : 'construction, building, construction company, residential construction, commercial construction'; ?>">
+    <title><?php echo isset($page_title) ? htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8') : 'Construction Company - Quality Building Services'; ?></title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
