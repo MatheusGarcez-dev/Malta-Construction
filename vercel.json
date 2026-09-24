@@ -1,19 +1,19 @@
 {
   "version": 2,
   "functions": {
-    "api/index.php": { "runtime": "vercel-php@0.7.1" },
-    "api/about.php": { "runtime": "vercel-php@0.7.1" },
-    "api/contact.php": { "runtime": "vercel-php@0.7.1" },
-    "api/residential.php": { "runtime": "vercel-php@0.7.1" },
-    "api/commercial.php": { "runtime": "vercel-php@0.7.1" },
-    "api/renovation.php": { "runtime": "vercel-php@0.7.1" },
-    "api/finish-carpentry.php": { "runtime": "vercel-php@0.7.1" },
-    "api/custom-closets.php": { "runtime": "vercel-php@0.7.1" },
-    "api/stair-renovation.php": { "runtime": "vercel-php@0.7.1" },
-    "api/trim-work.php": { "runtime": "vercel-php@0.7.1" },
-    "api/cabinet-installation.php": { "runtime": "vercel-php@0.7.1" },
-    "api/flooring.php": { "runtime": "vercel-php@0.7.1" },
-    "api/carpentry.php": { "runtime": "vercel-php@0.7.1" }
+    "api/index.php": { "runtime": "vercel-php@0.9.0" },
+    "api/about.php": { "runtime": "vercel-php@0.9.0" },
+    "api/contact.php": { "runtime": "vercel-php@0.9.0" },
+    "api/residential.php": { "runtime": "vercel-php@0.9.0" },
+    "api/commercial.php": { "runtime": "vercel-php@0.9.0" },
+    "api/renovation.php": { "runtime": "vercel-php@0.9.0" },
+    "api/finish-carpentry.php": { "runtime": "vercel-php@0.9.0" },
+    "api/custom-closets.php": { "runtime": "vercel-php@0.9.0" },
+    "api/stair-renovation.php": { "runtime": "vercel-php@0.9.0" },
+    "api/trim-work.php": { "runtime": "vercel-php@0.9.0" },
+    "api/cabinet-installation.php": { "runtime": "vercel-php@0.9.0" },
+    "api/flooring.php": { "runtime": "vercel-php@0.9.0" },
+    "api/carpentry.php": { "runtime": "vercel-php@0.9.0" }
   },
   "rewrites": [
     { "source": "/", "destination": "/api/index.php" },
