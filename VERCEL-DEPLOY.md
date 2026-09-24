@@ -7,6 +7,6 @@ Ao fazer alterações no site e antes de fazer **upload/deploy no Vercel**, lemb
    - **Includes:** copiar `includes/head.php`, `includes/footer.php`, `includes/header.php`, `includes/js.php` para `api/includes/`.
    - Na `api/` manter: `include __DIR__ . '/includes/...'` e URLs absolutas (ex.: `/contact`, `/assets/...`).
 
-2. **Build:** o Vercel usa os ficheiros em `api/` para as rotas; `assets/` e `vercel.json` são servidos a partir da raiz.
+2. **Build:** o Vercel usa os ficheiros em `api/` para as rotas; `assets/` e `vercel.json` são servidos a partir da raiz. O runtime em `vercel.json` é `vercel-php@0.9.0` (PHP 8.5, Node 22).
 
 Assim o site no Vercel fica igual ao local (scroll-to-top, imagens, textos, etc.).
