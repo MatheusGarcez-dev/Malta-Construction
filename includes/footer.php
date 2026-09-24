@@ -2,9 +2,11 @@
     <div class="container">
         <div class="footer__content">
             <div class="footer__section">
-                <h3 class="footer__title">Construction Company</h3>
+                <a href="./" class="footer__logo">
+                    <img src="assets/img/logo-horizontal.png" alt="Malta Construction LLC">
+                </a>
                 <p class="footer__description">
-                    Quality construction services for residential and commercial projects
+                    Carpentry, woodwork, and construction for residential and commercial projects
                 </p>
                 <div class="footer__social">
                     <a href="https://www.facebook.com/share/1BitXzcxXe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
@@ -18,6 +20,7 @@
             <div class="footer__section">
                 <h4 class="footer__subtitle">Services</h4>
                 <ul class="footer__links">
+                    <li><a href="carpentry" class="footer__link">Carpentry &amp; Woodwork</a></li>
                     <li><a href="finish-carpentry" class="footer__link">Finish Carpentry</a></li>
                     <li><a href="custom-closets" class="footer__link">Custom Closets</a></li>
                     <li><a href="stair-renovation" class="footer__link">Stair Renovation</a></li>
@@ -52,7 +55,7 @@
         </div>
         
         <div class="footer__bottom">
-            <p>&copy; Construction Company - <?php echo date('Y'); ?> - All Rights Reserved</p>
+            <p>&copy; Malta Construction LLC - <?php echo date('Y'); ?> - All Rights Reserved</p>
         </div>
     </div>
 </footer>

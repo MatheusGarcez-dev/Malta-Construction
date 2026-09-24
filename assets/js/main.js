@@ -114,6 +114,49 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    const recentTrack = document.querySelector('.recent__track');
+    const recentGroup = recentTrack ? recentTrack.querySelector('.recent__group') : null;
+    if (recentTrack && recentGroup && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        let shift = 0;
+        let width = 0;
+        let last = 0;
+        const speed = 55;
+
+        function measureRecent() {
+            width = recentGroup.offsetWidth;
+        }
+        measureRecent();
+        if (window.ResizeObserver) {
+            new ResizeObserver(measureRecent).observe(recentGroup);
+        } else {
+            window.addEventListener('resize', measureRecent);
+        }
+
+        function tickRecent(now) {
+            if (!last) last = now;
+            const dt = Math.min(0.05, (now - last) / 1000);
+            last = now;
+            if (width > 0) {
+                shift = (shift + speed * dt) % width;
+                recentTrack.style.transform = 'translate3d(' + (-shift) + 'px,0,0)';
+            }
+            window.requestAnimationFrame(tickRecent);
+        }
+        window.requestAnimationFrame(tickRecent);
+    }
+
+    const heroSlides = document.querySelectorAll('.hero__slides img');
+    if (heroSlides.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        let heroIndex = 0;
+        window.setInterval(function() {
+            heroSlides[heroIndex].classList.remove('is-active');
+            heroSlides[heroIndex].setAttribute('aria-hidden', 'true');
+            heroIndex = (heroIndex + 1) % heroSlides.length;
+            heroSlides[heroIndex].classList.add('is-active');
+            heroSlides[heroIndex].removeAttribute('aria-hidden');
+        }, 4200);
+    }
+
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-section__item');
     

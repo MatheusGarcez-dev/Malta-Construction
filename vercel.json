@@ -12,7 +12,8 @@
     "api/stair-renovation.php": { "runtime": "vercel-php@0.7.1" },
     "api/trim-work.php": { "runtime": "vercel-php@0.7.1" },
     "api/cabinet-installation.php": { "runtime": "vercel-php@0.7.1" },
-    "api/flooring.php": { "runtime": "vercel-php@0.7.1" }
+    "api/flooring.php": { "runtime": "vercel-php@0.7.1" },
+    "api/carpentry.php": { "runtime": "vercel-php@0.7.1" }
   },
   "rewrites": [
     { "source": "/", "destination": "/api/index.php" },
@@ -26,7 +27,8 @@
     { "source": "/stair-renovation", "destination": "/api/stair-renovation.php" },
     { "source": "/trim-work", "destination": "/api/trim-work.php" },
     { "source": "/cabinet-installation", "destination": "/api/cabinet-installation.php" },
-    { "source": "/flooring", "destination": "/api/flooring.php" }
+    { "source": "/flooring", "destination": "/api/flooring.php" },
+    { "source": "/carpentry", "destination": "/api/carpentry.php" }
   ],
   "headers": [
     {

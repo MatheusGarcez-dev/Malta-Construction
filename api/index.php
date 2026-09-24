@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="hero__image">
-                    <img src="/assets/img/1.webp" alt="Malta Construction - Quality Building Services" loading="eager" decoding="async">
+                    <?php $HERO_ASSETS = '/assets/'; include __DIR__ . '/includes/hero-carousel.php'; ?>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <div class="section__header">
                 <h2 class="section__title">Our <span class="section__title--golden">Services</span></h2>
                 <div class="section__divider"></div>
-                <p class="section__subtitle">Finish carpentry, custom storage, stairs, trim, cabinets, and flooring—done with precision</p>
+                <p class="section__subtitle">Finish carpentry, custom storage, stairs, trim, cabinets, and flooring—done with precision. Looking for woodwork only? See our <a href="/carpentry">carpentry &amp; woodwork</a> page.</p>
             </div>
             <div class="solucoes__grid">
                 <article class="solucoes__card" id="service-finish-carpentry">
@@ -144,6 +144,8 @@
             </div>
         </div>
     </section>
+
+    <?php $RECENT_ASSETS = '/assets/'; include __DIR__ . '/includes/recent-work.php'; ?>
 
     <!-- CTA Section -->
     <section class="cta-section" id="contato">
@@ -306,6 +308,8 @@
             </div>
         </div>
     </section>
+
+    <?php include __DIR__ . '/includes/reviews.php'; ?>
 
     <!-- FAQ Section -->
     <section class="faq-section">

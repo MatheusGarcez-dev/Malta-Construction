@@ -2,13 +2,13 @@
     <div class="container">
         <div class="header__content">
             <a href="./" class="header__logo">
-                <img src="assets/img/logo.png" alt="Construction Company">
+                <img src="assets/img/logo-horizontal.png" alt="Malta Construction LLC">
             </a>
             
             <nav class="header__nav" id="headerNav">
                 <div class="header__nav-header">
                     <a href="./" class="header__logo-mobile">
-                        <img src="assets/img/logo.png" alt="Construction Company">
+                        <img src="assets/img/logo-horizontal.png" alt="Malta Construction LLC">
                     </a>
                     <button class="header__close" id="mobileClose" aria-label="Close menu">
                         <span>×</span>
@@ -20,6 +20,7 @@
                     <li class="header__dropdown">
                         <a href="./#services" class="header__link">Services <span class="header__arrow">▼</span></a>
                         <ul class="header__submenu">
+                            <li><a href="carpentry" class="header__sublink">Carpentry &amp; Woodwork</a></li>
                             <li><a href="finish-carpentry" class="header__sublink">Finish Carpentry</a></li>
                             <li><a href="custom-closets" class="header__sublink">Custom Closets</a></li>
                             <li><a href="stair-renovation" class="header__sublink">Stair Renovation</a></li>

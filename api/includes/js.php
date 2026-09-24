@@ -1,3 +1,3 @@
 <?php
-// Vercel: assets at project root; use absolute paths
-echo '<script src="/assets/js/main.js"></script>' . "\n";
+$version = filemtime(__DIR__ . '/../../assets/js/main.js');
+echo '<script src="/assets/js/main.js?v=' . $version . '"></script>' . "\n";

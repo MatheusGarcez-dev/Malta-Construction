@@ -13,7 +13,8 @@ if (is_dir($jsDir)) {
 }
 
 foreach ($jsFiles as $jsFile) {
-    echo '<script src="' . htmlspecialchars($jsFile) . '"></script>' . "\n";
+    $version = filemtime(__DIR__ . '/../' . $jsFile);
+    echo '<script src="' . htmlspecialchars($jsFile) . '?v=' . $version . '"></script>' . "\n";
 }
 ?>
 
