@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/includes/head.php'; ?>
+<?php include __DIR__ . '/../head.php'; ?>
 
 <main>
     <!-- Sobre Nós Hero -->
@@ -211,7 +211,7 @@
     </section>
 </main>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../footer.php'; ?>
 
 </body>
 </html>

@@ -1,0 +1,401 @@
+<?php include __DIR__ . '/../head.php'; ?>
+
+<main>
+    <!-- Hero Section ------->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        Quality Construction Services <span>You Can Trust</span>
+                    </h1>
+                    <p class="hero__description">
+                        We deliver exceptional residential and commercial construction projects with precision, quality, and professionalism. Building your vision, one project at a time.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="/contact" class="btn btn--primary">Get a Quote</a>
+
+                        <a href="/about" class="btn btn--secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <?php $HERO_ASSETS = '/assets/'; include __DIR__ . '/../hero-carousel.php'; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Section -->
+    <section class="solucoes" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Our <span class="section__title--golden">Services</span></h2>
+                <div class="section__divider"></div>
+                <p class="section__subtitle">Finish carpentry, custom storage, stairs, trim, cabinets, and flooring—done with precision. Looking for woodwork only? See our <a href="/carpentry">carpentry &amp; woodwork</a> page.</p>
+            </div>
+            <div class="solucoes__grid">
+                <article class="solucoes__card" id="service-finish-carpentry">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-finish-carpentry.jpeg" alt="Finish carpentry project" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Finish Carpentry</h3>
+                        <p class="solucoes__card-text">
+                            Crown molding, built-ins, and final wood details that give your home a polished, professional look.
+                        </p>
+                        <a href="/finish-carpentry" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-custom-closets">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-custom-closets.jpeg" alt="Custom closet installation" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Custom Closets</h3>
+                        <p class="solucoes__card-text">
+                            Walk-in and reach-in closet systems designed around your storage needs and daily routine.
+                        </p>
+                        <a href="/custom-closets" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-stair-renovation">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-stair-renovation.jpeg" alt="Stair renovation" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-stairs"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Stair Renovation</h3>
+                        <p class="solucoes__card-text">
+                            New treads, risers, railings, and refinishing to refresh your staircase safely and beautifully.
+                        </p>
+                        <a href="/stair-renovation" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-trim-work">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-trim-work.jpeg" alt="Trim and molding work" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Trim Work</h3>
+                        <p class="solucoes__card-text">
+                            Baseboards, casings, wainscoting, and decorative millwork installed with clean lines and tight joints.
+                        </p>
+                        <a href="/trim-work" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-cabinet-installation">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-cabinet-installation.jpeg" alt="Cabinet installation" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-boxes-stacked"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Cabinet Installation</h3>
+                        <p class="solucoes__card-text">
+                            Kitchen and bath cabinets leveled, secured, and aligned for a factory-quality fit and finish.
+                        </p>
+                        <a href="/cabinet-installation" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="solucoes__card" id="service-flooring">
+                    <div class="solucoes__image">
+                        <img src="/assets/img/service-flooring.jpeg" alt="Flooring installation" width="400" height="280" loading="eager" decoding="async">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Flooring</h3>
+                        <p class="solucoes__card-text">
+                            Hardwood, laminate, luxury vinyl, and tile installed with attention to transitions and subfloor prep.
+                        </p>
+                        <a href="/flooring" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <?php $RECENT_ASSETS = '/assets/'; include __DIR__ . '/../recent-work.php'; ?>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contato">
+        <div class="container">
+            <div class="cta-section__content">
+                <h2 class="cta-section__title">Ready to Start Your Project?</h2>
+                <p class="cta-section__text">
+                    Contact us today for a free consultation and quote. Let's bring your construction vision to life.
+                </p>
+                <div class="cta-section__buttons">
+                    <a href="/contact" class="btn btn--primary">Get a Quote</a>
+                    <a href="tel:+18436021986" class="btn btn--secondary">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="socios" id="sobre">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Our <span class="section__title--golden">Team</span></h2>
+                <div class="section__divider"></div>
+                <p class="section__subtitle">Experienced professionals dedicated to delivering quality construction</p>
+            </div>
+            <div class="socios__content">
+                <div class="socios__item">
+                    <div class="socios__image">
+                        <img src="/assets/img/2.webp" alt="Construction Team Member" loading="lazy" decoding="async">
+                    </div>
+                    <div class="socios__text">
+                        <h3 class="socios__name">Expert Construction Team</h3>
+                        <p class="socios__role">Professional Builders</p>
+                        <p class="socios__description">
+                            Our team consists of experienced construction professionals with years of expertise in residential and commercial building. We bring together skilled craftsmen, project managers, and construction specialists to ensure every project meets the highest standards of quality and safety.
+                        </p>
+                        <p class="socios__description">
+                            With a commitment to excellence and attention to detail, our team works collaboratively to deliver projects on time and within budget. We stay current with the latest construction techniques and building codes to provide you with the best possible results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="socios__item socios__item--reverse">
+                    <div class="socios__image">
+                        <img src="/assets/img/1.webp" alt="Construction Project Manager" loading="lazy" decoding="async">
+                    </div>
+                    <div class="socios__text">
+                        <h3 class="socios__name">Project Management Excellence</h3>
+                        <p class="socios__role">Dedicated Service</p>
+                        <p class="socios__description">
+                            Our project managers oversee every aspect of your construction project, from initial planning to final completion. We maintain clear communication throughout the process, keeping you informed and involved every step of the way.
+                        </p>
+                        <p class="socios__description">
+                            We understand that construction projects are significant investments, and we treat each one with the care and professionalism it deserves. Our goal is to exceed your expectations and deliver results that stand the test of time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="beneficios" id="beneficios">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Why Choose <span class="section__title--golden">Our Services?</span></h2>
+                <div class="section__divider"></div>
+                <p class="section__subtitle">Quality construction services with professional expertise and reliable results</p>
+            </div>
+            
+            <div class="beneficios__grid">
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Quality Craftsmanship</h3>
+                    <p class="beneficios__text">
+                        We use only the finest materials and proven construction techniques to ensure your project stands the test of time.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">On-Time Delivery</h3>
+                    <p class="beneficios__text">
+                        Our project management ensures your construction is completed on schedule, minimizing delays and keeping you informed.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Competitive Pricing</h3>
+                    <p class="beneficios__text">
+                        We provide transparent, competitive pricing with no hidden costs. Quality construction that fits your budget.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Licensed & Insured</h3>
+                    <p class="beneficios__text">
+                        Fully licensed and insured construction company, giving you peace of mind throughout your project.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Expert Team</h3>
+                    <p class="beneficios__text">
+                        Our experienced professionals bring years of construction expertise to every project we undertake.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Customer Satisfaction</h3>
+                    <p class="beneficios__text">
+                        Your satisfaction is our priority. We work closely with you to ensure your vision becomes reality.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="beneficios__highlight">
+                <div class="beneficios__highlight-content">
+                    <div class="beneficios__highlight-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="beneficios__highlight-text">
+                        <h3 class="beneficios__highlight-title">Professional Construction Services</h3>
+                        <p class="beneficios__highlight-description">
+                            Whether you're building a new home, renovating an existing property, or constructing a commercial facility, we have the expertise and resources to handle projects of any size. Our comprehensive approach ensures every aspect of your construction project is managed with precision and care.
+                        </p>
+                        <p class="beneficios__highlight-description">
+                            From initial consultation to final walkthrough, we maintain the highest standards of quality and professionalism. Contact us today to discuss your construction needs and discover how we can help bring your project to life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php include __DIR__ . '/../reviews.php'; ?>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Frequently Asked <span class="section__title--golden">Questions</span></h2>
+                <div class="section__divider"></div>
+                <p class="section__subtitle">Find quick and reliable answers to common questions about our construction services</p>
+            </div>
+            
+            <div class="faq-section__list">
+                <div class="faq-section__item">
+                    <div class="faq-section__question">
+                        <h3 class="faq-section__question-text">What types of construction projects do you handle?</h3>
+                        <span class="faq-section__icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="faq-section__answer">
+                        <p class="faq-section__answer-text">
+                            We handle a wide range of construction projects including residential homes, commercial buildings, renovations, remodeling, and additions. From small projects to large-scale construction, we have the expertise to deliver quality results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-section__item">
+                    <div class="faq-section__question">
+                        <h3 class="faq-section__question-text">How long does a typical construction project take?</h3>
+                        <span class="faq-section__icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="faq-section__answer">
+                        <p class="faq-section__answer-text">
+                            Project timelines vary depending on the scope and complexity of the work. During our initial consultation, we'll provide you with a detailed timeline for your specific project. We work efficiently to complete projects on schedule while maintaining quality standards.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-section__item">
+                    <div class="faq-section__question">
+                        <h3 class="faq-section__question-text">Are you licensed and insured?</h3>
+                        <span class="faq-section__icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="faq-section__answer">
+                        <p class="faq-section__answer-text">
+                            Yes, we are fully licensed and insured. We carry comprehensive liability insurance and workers' compensation coverage to protect you and our team throughout the construction process.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-section__item">
+                    <div class="faq-section__question">
+                        <h3 class="faq-section__question-text">Do you provide free estimates?</h3>
+                        <span class="faq-section__icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="faq-section__answer">
+                        <p class="faq-section__answer-text">
+                            Yes, we offer free consultations and estimates for all construction projects. We'll assess your needs, discuss your vision, and provide a detailed quote with no obligation.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-section__item">
+                    <div class="faq-section__question">
+                        <h3 class="faq-section__question-text">What areas do you serve?</h3>
+                        <span class="faq-section__icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
+                    <div class="faq-section__answer">
+                        <p class="faq-section__answer-text">
+                            We serve clients throughout the region. Contact us to confirm if we service your area. We're committed to providing quality construction services wherever we operate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php include __DIR__ . '/../footer.php'; ?>
+
+</body>
+</html>
